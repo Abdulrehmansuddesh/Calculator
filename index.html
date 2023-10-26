@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+
+    <div class="main">
+        <input type="text" placeholder="0" id="number" >
+    </div>
+
+    <div class="numberc">
+        <table class="b1" cellspacing="5" >
+            <tr>
+                <td class="gry" onclick="Clear()">AC</td>
+                <td class="gry" onclick="setNum('+')">+</td>
+                <td class="gry" onclick="setNum('-')">-</td>
+                <td class="orang" onclick="setNum('/')">/</td>
+            </tr>
+            <tr>
+                <td onclick="setNum(7)">7</td>
+                <td onclick="setNum(8)" >8</td>
+                <td onclick="setNum(9)">9</td>
+                <td class="orang" onclick="setNum('*')">x</td>
+            </tr>
+            <tr>
+                <td onclick="setNum(4)">4</td>
+                <td onclick="setNum(5)">5</td>
+                <td onclick="setNum(6)">6</td>
+                <td class="orang" onclick="setNum('.')">.</td>
+            </tr>
+            <tr>
+                <td onclick="setNum(1)">1</td>
+                <td onclick="setNum(2)">2</td>
+                <td onclick="setNum(3)">3</td>
+                <td class="orang" onclick="del()">DEL</td>
+            </tr>
+            <tr>
+                <td onclick="setNum('00')" >00</td>
+                <td onclick="setNum(0)">0</td>
+                <td onclick="setNum('%')">%</td>
+                <td class="orang" onclick="equal('')">=</td>
+            </tr>
+        </table>
+    </div>
+</div>
+    
+</body>
+<script src="app.js"></script>
+</html>
